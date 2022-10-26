@@ -27,7 +27,19 @@ header{
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
 
 /* ---------ESTILOS MAIN----------*/
-
+.valoraciones_clase{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hexagono{
+    clip-path:polygon(25% 0%, 75% 0%, 100% 48%, 75% 100%, 25% 100%, 0% 50%);
+    width: 20rem;
+    height: 15rem;
+    background-color: green;
+    margin: 2rem;
+    text-align: center;
+}
 /* ---------ESTILOS MAIN MEDIA QUERY----------*/
 
 /* ---------ESTILOS FOOTER----------*/
