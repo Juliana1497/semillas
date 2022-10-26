@@ -1,0 +1,35 @@
+/* ---------ESTILOS GENERALES----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+/* ---------ESTILOS BODY----------*/
+body{
+    position: fixed;
+    left:15%;
+}
+/* ---------ESTILOS BODY MEDIA QUERY----------*/
+
+/* ---------ESTILOS HEADER----------*/
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 15%;
+    background-color: green;
+}
+/* ---------ESTILOS HEADER MEDIA QUERY----------*/
+
+/* ---------ESTILOS MAIN----------*/
+
+/* ---------ESTILOS MAIN MEDIA QUERY----------*/
+
+/* ---------ESTILOS FOOTER----------*/
+
+/* ---------ESTILOS FOOTER MEDIA QUERY----------*/
