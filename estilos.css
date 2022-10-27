@@ -156,7 +156,7 @@ ul{
     clip-path: circle(50.1% at 50% 100%);
     background: gray;
     position: absolute;
-    margin: 5rem 2.5rem 0rem 3.5rem;
+    margin: 5rem 2.5rem 0rem 2.5rem;
 }
 .tacometro::after{
     content: "";
