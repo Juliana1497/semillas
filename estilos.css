@@ -554,14 +554,14 @@ header{
     left: 12px;
 }
 
-summary{
+/* summary{
     font-size: 20px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     background-color:#69BF97 ;
 
-}
+} */
 
 .principal_modulos{
     margin-left: auto;
