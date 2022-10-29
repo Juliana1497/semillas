@@ -29,7 +29,7 @@ header{
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
 
 /* ---------ESTILOS MAIN----------*/
-summary.modulo-1::marker{display:none} 
+
 .modulo-1{
     background-color: #69BF97;
     font-weight:bold;
@@ -37,6 +37,7 @@ summary.modulo-1::marker{display:none}
     margin: auto;
     margin: 1rem;
     padding-left: 1rem;
+    justify-content: space-between;
 }
 .estado-animo{
     display:flex;
@@ -326,6 +327,9 @@ summary.modulo-1::marker{display:none}
     100%{
         transform:rotate(0deg);transform-origin: bottom;
     }
+}
+.tacometro a{
+    color: #000;
 }
 .tacometro .emoji{
     width: 2rem;
