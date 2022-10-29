@@ -40,10 +40,19 @@ header{
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
 
 /* ---------ESTILOS MAIN----------*/
-summary.modulo-1::marker{display:none} 
 .modulo-1{
     background-color: #69BF97;
     font-weight:bold;
+    display: flex;
+    margin: auto;
+    margin: 1rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+.estado-animo{
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 .estado-animo{
     display:flex;
@@ -66,6 +75,11 @@ summary.modulo-1::marker{display:none}
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.hexagono h2{
+    width: 6rem;
+    font-weight: normal;
+    font-size: 1.8rem;
 }
 .emoji {
     width: 50px;
@@ -145,9 +159,109 @@ summary.modulo-1::marker{display:none}
 #emoji-animo{
     background-color: green;
     margin: none;
+    animation-name: emojis;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes emojis{
+    0% {
+        background-color: green; 
+    }
+    20%{
+        background-color: green;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: red;
+    }
+    100% {
+        background-color: red; 
+    } 
+}
+#emoji-animo .emoji_lips{
+    animation-name: labios;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes labios{
+    0% {
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(135deg);
+        position: absolute;
+        bottom: 6px;
+        left: 12px;
+    }
+    20%{
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(135deg);
+        position: absolute;
+        bottom: 6px;
+        left: 12px;
+    }
+    40% {
+        width: 20px;
+        height: 0.1px;
+        position: absolute;
+        color: #000;
+        bottom: 9px;
+        left: 12px;  
+        border-radius: 0%;
+        transform: rotate(0deg);
+        border: 2px solid black;
+    }
+    60%{
+        width: 20px;
+        height: 0.1px;
+        position: absolute;
+        color: black;
+        bottom: 9px;
+        left: 12px;
+        border-radius: 0%; 
+        transform: rotate(0deg);
+        border: 2px solid black;
+    }
+    80%{
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(-45deg);
+        position: absolute;
+        bottom: -5px;
+        left: 12px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(-45deg);
+        position: absolute;
+        bottom: -5px;
+        left: 12px;
+    }
 }
 #desp{
-    /* margin: 2rem; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -188,7 +302,8 @@ summary.modulo-1::marker{display:none}
     justify-content: center;
     align-items: center;
     text-align: center; 
-    margin: auto;  
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .tacometro::before{
@@ -208,6 +323,28 @@ summary.modulo-1::marker{display:none}
     background: black;
     position: absolute;
     margin: 7rem 7rem 0rem 7rem;
+    -webkit-animation: circle 5s infinite;
+    animation: circle 5s infinite;
+}
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg); transform-origin: bottom;
+    }
+    25%{
+        transform: rotate(70deg); transform-origin: bottom;
+    }
+    50%{
+        transform: rotate(0deg); transform-origin: bottom;
+    }
+    75%{
+        transform: rotate(-70deg); transform-origin: bottom;
+    }
+    100%{
+        transform:rotate(0deg);transform-origin: bottom;
+    }
+}
+.tacometro a{
+    color: #000;
 }
 .tacometro .emoji{
     width: 2rem;
@@ -448,6 +585,7 @@ details{
     border-right: solid 5px;
     transform: rotate(130deg);
 }
+
 /* ---------ESTILOS MAIN MEDIA QUERY----------*/
 
 /* ---------ESTILOS FOOTER----------*/
