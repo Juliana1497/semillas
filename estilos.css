@@ -1,3 +1,10 @@
+:root{
+    --color_tareasrealizadas:#714793;
+    --color_tareasasignadas:#41A8E2;
+
+}
+
+
 /* ---------ESTILOS GENERALES----------*/
 *{
     margin: 0;
@@ -5,17 +12,25 @@
     box-sizing: border-box;
 }
 html{
+    
     font-size: 16px;
 }
 
 /* ---------ESTILOS BODY----------*/
+
 body{
-    position: fixed;
-    left:15%;
+   
+    margin-left:15%;
+    width: 75%;
+    height: 100%;
+    
 }
+
+
 /* ---------ESTILOS BODY MEDIA QUERY----------*/
 
 /* ---------ESTILOS HEADER----------*/
+
 header{
     position:fixed;
     top:0;
@@ -28,8 +43,210 @@ header{
 
 /* ---------ESTILOS MAIN----------*/
 
+.section-tareas{
+
+    background-color: #CDEADC;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 10px ;
+    
+}
+
+.tittle_grafico{
+    margin-top: 100px;
+    text-align: center;
+    color:#32634F;
+    font-size: 40px;
+}
+.container_grafico{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grafico{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_tareasrealizadas) 25%,
+    var(--color_tareasasignadas) 25% 100%);
+    box-shadow: 1px 1px 5px 1px rgba(70 70 70);
+    
+}
+
+.leyenda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+[class^="tareas_entregadas1"]{
+    width: 15px;
+    height: 15px;
+    background-color:var(--color_tareasrealizadas);
+    margin-right: 8px;
+    border-radius: 3px;
+    
+}
+[class^="tareas_asignadas1"]{
+    width: 15px;
+    height: 15px;
+    background-color:var(--color_tareasasignadas);
+    margin-right: 8px;
+    border-radius: 3px;
+    
+}
+
+.gradiente{
+    width: 40%;
+    margin:auto;
+}
+.gradiente-color {
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    
+}
+.emoji {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: solid 3px #000;
+    border-radius: 100%;
+    position: relative;
+}
+
+.emoji_grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width: 40%;
+    margin:auto;
+}
+
+.emoji .emoji_eyes{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.emoji .emoji_eyes::before,
+.emoji .emoji_eyes::after{
+    content:"" ;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 30px;
+    top: 15px;
+}
+
+.emoji .emoji_eyes::before{
+    left: 10px;
+
+}
+
+.emoji .emoji_eyes::after{
+    right: 10px;
+}
+
+.emoji.emoji--cry .emoji_lips {
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -5px;
+    left: 12px;
+}
+
+.emoji.emoji--serius .emoji_lips {
+    width: 20px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: 9px;
+    left: 12px;
+}
+
+.emoji.emoji--happy .emoji_lips {
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(135deg);
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+summary{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color:#69BF97 ;
+
+}
+
+.principal_modulos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 100%;
+
+}
+
+details{
+    margin-bottom: 15px;
+}
+
+.Arrow{
+
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-top:solid 5px;
+    border-right: solid 5px;
+    transform: rotate(130deg);
+}
 /* ---------ESTILOS MAIN MEDIA QUERY----------*/
 
 /* ---------ESTILOS FOOTER----------*/
+footer  {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+.redesfooter{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: end;
+    align-items: center;
+}
+.footer_img {
+    width: 40px;
+}
+.footer-images_redes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+}
 
 /* ---------ESTILOS FOOTER MEDIA QUERY----------*/
