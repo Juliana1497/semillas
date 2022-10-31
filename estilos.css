@@ -22,8 +22,11 @@ body{
     left:14%;
     font-family: 'Dosis', sans-serif;
     width: 86%;
+<<<<<<< HEAD
     padding: 1rem;
     padding-right: 4rem;
+=======
+>>>>>>> ba9d3d222e90c069c48cfa977ead493499cc335f
 }
 
 
@@ -38,13 +41,14 @@ header{
     height: 100%;
     width: 6%;
     background-color:  #009458;
+    overflow: scroll;
 }
 .hoja_usuario{
     height: 2.5%;
     width:60%;
     border-radius:45% 0 45% 0;
-    background-color: blanchedalmond;
-    margin: 2rem 0.5rem 0rem 1.1rem;
+    background-color: white;
+    margin: 2rem 0.9rem 0rem 0.8rem;
 }
 .img_usuario{
     width: 70%;
@@ -52,68 +56,107 @@ header{
 }
 .nombre_usuario{
     text-align:center;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
 }
 .menu_hamburguesa{
     width: 30px;
     display: block;
     margin:auto;
 }
-.logo_header{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
 .logo_white{
-    width: 30px;
-    text-align: center;
-    margin: 0 1rem ;
-    z-index: 1;
-    vertical-align: bottom;
+    width: 2.8rem;
+    margin: auto;
+    margin-left: 0.7rem;
+    margin-top: 0.4rem;
 }
 .medio_circulo{
     background-color: #0a2c1f;
     border-radius: 100px 100px 0 0;
+    width: 6%;
     height: 35px;
-    z-index: 0;
+    position: fixed;
+    bottom:0;
 }
-div.menu_estatico ul li{
+div.menu_desktop ul li{
     list-style-type: none;
     display: none;
 }
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
-@media ((min-width: 481px) and (max-width:768px)) { 
+@media (min-width: 481px) { 
     
     html{ 
         font-size: 12px;
-            header{
-            width: 20%;
-            padding: 3rem;
-            }
-            .img_usuario{
-                height: 6%;
-                width:100%;
-                border-radius:45% 0 45% 0;
-                background-color: blanchedalmond;
-                margin-bottom: 2rem;
-            }
-            .nombre_usuario{
-                text-align:center;
-                margin: 1rem;
-            }
-            div.menu_estatico ul li{
-                list-style-type: none;
-                display: none;
-            }
-        }
     }
+    body{
+        left:24%;
+        width: 85%;
+    }
+    header{
+        height: 100%;
+        width: 15%;
+        overflow: scroll;
+    }
+    .hoja_usuario{
+        height: 8%;
+        width:60%;
+        margin: 2rem 0.5rem 0rem 1.6rem;
+    }
+    .img_usuario{
+        width: 70%;
+        margin: 0.5rem 0.2rem 0.5rem 0.8rem;
+    }
+    .nombre_usuario{
+        font-size: 1.5rem;
+    }
+    .menu_hamburguesa{
+        display: none;
+    }
+    .menu_desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    div.menu_desktop ul li{
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+    .nav_item{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    div.menu_desktop ul li a{
+        color: black;
+        text-decoration: none;
+    }
+    .logo_white{
+        width: 5rem;
+        margin: auto;
+    }
+    .medio_circulo{
+        background-color: #0a2c1f;
+        border-radius: 100px 100px 0 0;
+        width: 15%;
+        height: 85px;
+        position: fixed;
+        bottom:0;
+    }
+    
+    }
+
 @media (min-width: 769px) { 
         html{
             font-size: 16px;}
+
         }
 /* ---------ESTILOS MAIN----------*/
 .nombre_diplomado{
     text-align: center;
+    padding: 1.5rem;
 }
 .foto_estudiante{
     border-radius: 50%;
