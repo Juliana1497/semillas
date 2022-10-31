@@ -21,7 +21,7 @@ body{
     position: relative;
     left:14%;
     font-family: 'Dosis', sans-serif;
-    width: 95%;
+    width: 86%;
     padding: 1rem;
     padding-right: 4rem;
 }
@@ -499,18 +499,83 @@ div.menu_estatico ul li{
     left: 0.4rem;
     bottom: 0.3rem;
 }
+/* seccion Maria*/
 
 .section-tareas{
 
     background-color: #CDEADC;
-    width: 75%;
-    margin-left: 60px;
-    margin-right:50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 10px;
     padding-top: 10px ;
     
+}
+
+.section-tareas .emoji.emoji--cry{
+    -webkit-animation: triste 5s infinite;
+    animation: triste 5s infinite;
+}
+@-webkit-keyframes triste{
+    0%{
+        background-color: transparent; 
+    }
+    25%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.section-tareas .emoji.emoji--serius{
+    -webkit-animation: serio 5s infinite;
+    animation: serio 5s infinite;
+}
+@-webkit-keyframes serio{
+    0%{
+        background-color: transparent; 
+    }
+    25%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: transparent;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.section-tareas .emoji.emoji--happy{
+    -webkit-animation: feliz 5s infinite;
+    animation: feliz 5s infinite;
+}
+@-webkit-keyframes feliz{
+    0%{
+        background-color: transparent; 
+    }
+    25%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: transparent;
+    }
+    75%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: green;
+    }
 }
 
 .tittle_grafico{
@@ -520,10 +585,9 @@ div.menu_estatico ul li{
     font-size: 12px;
 }
 .container_grafico{
-    width: 500px;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-right: 50px;
     gap: 20px;
 }
@@ -535,7 +599,30 @@ div.menu_estatico ul li{
     var(--color_tareasasignadas) 25% 100%);
     box-shadow: 1px 1px 5px 1px rgba(70 70 70);
     margin-top: 40px;
-    
+    -webkit-animation: grafica 5s infinite;
+    animation: grafica 5s infinite;
+}
+@-webkit-keyframes grafica{
+    0%{
+        background-image: conic-gradient(var(--color_tareasrealizadas) 25%,
+        var(--color_tareasasignadas) 25% 100%); 
+    }
+    25%{
+        background-image: conic-gradient(var(--color_tareasrealizadas) 40%,
+        var(--color_tareasasignadas) 40% 100%);
+    }
+    50%{
+        background-image: conic-gradient(var(--color_tareasrealizadas) 60%,
+        var(--color_tareasasignadas) 60% 100%);
+    }
+    75%{
+        background-image: conic-gradient(var(--color_tareasrealizadas) 75%,
+        var(--color_tareasasignadas) 75% 100%);
+    }
+    100%{
+        background-image: conic-gradient(var(--color_tareasrealizadas) 100%,
+        var(--color_tareasasignadas) 100% 100%);
+    }
 }
 .leyenda{
     display: flex;
@@ -565,18 +652,32 @@ div.menu_estatico ul li{
     margin-top: 10px;
 }
 
-.gradiente p{
-    fon
-}
-
 .gradiente-color {
     width: 100%;
     height: 10px;
     background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
     margin-bottom: 20px;
-    margin-top: 20px;
-    
-    
+    margin-top: 20px; 
+    -webkit-animation: barra 5s infinite;
+    animation: barra 5s infinite;   
+}
+
+@-webkit-keyframes barra{
+    0%{
+        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%); 
+    }
+    25%{
+        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
+    }
+    50%{
+        background-image: linear-gradient(90deg, red 0%, red 100%);
+    }
+    75%{
+        background-image: linear-gradient(90deg, yellow 0%, yellow 100%);
+    }
+    100%{
+        background-image: linear-gradient(90deg, green 0%, green 100%);
+    }
 }
 .emoji {
     width: 50px;
@@ -656,18 +757,21 @@ div.menu_estatico ul li{
 }
 
   summary.modulo {
-    font-size: 5px;
-    list-style: none;
+    background-color: #69BF97;
+    font-weight:bold;
     display: flex;
+    margin: auto;
+    margin: 1rem;
+    padding-left: 1rem;
     justify-content: space-between;
-    background-color:#69BF97 ;
+    font-size: 5px;
 
 } 
 
 .principal_modulos{
-    margin-left: 60px;
+    margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 100%;
     height: 100%;
 
 }
@@ -690,11 +794,14 @@ details{
 /* ---------ESTILOS MAIN MEDIA QUERY----------*/
 
 /* ---------ESTILOS FOOTER----------*/
-footer  {
-    width: 100%;
-    height: 10vh;
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: #009458;
 }
+
 .redesfooter{
     display: flex;
     flex-direction: column;
