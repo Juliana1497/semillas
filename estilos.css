@@ -48,7 +48,9 @@ header{
     margin: 1rem;
     padding-left: 1rem;
     justify-content: space-between;
+    font-size: 5px;
 }
+
 .estado-animo{
     display:flex;
     text-align: center;
@@ -408,55 +410,55 @@ header{
 
     background-color: #CDEADC;
     width: 75%;
-    margin: auto;
+    margin-left: 60px;
+    margin-right:50px;
     position: relative;
-    margin-bottom: 30px;
-    padding-bottom: 60px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     padding-top: 10px ;
     
 }
 
 .tittle_grafico{
-    margin-top: 100px;
+    margin-top: 10px;
     text-align: center;
     color:#32634F;
-    font-size: 40px;
+    font-size: 12px;
 }
 .container_grafico{
-    width: 700px;
-    height: 550px;
+    width: 500px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 20px;
 }
 .grafico{
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-image: conic-gradient(var(--color_tareasrealizadas) 25%,
     var(--color_tareasasignadas) 25% 100%);
     box-shadow: 1px 1px 5px 1px rgba(70 70 70);
+    margin-top: 40px;
     
 }
-
 .leyenda{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 [class^="tareas_entregadas1"]{
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
     background-color:var(--color_tareasrealizadas);
     margin-right: 8px;
     border-radius: 3px;
     
 }
 [class^="tareas_asignadas1"]{
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
     background-color:var(--color_tareasasignadas);
     margin-right: 8px;
     border-radius: 3px;
@@ -464,9 +466,15 @@ header{
 }
 
 .gradiente{
-    width: 40%;
+    width: 80%;
     margin:auto;
+    margin-top: 10px;
 }
+
+.gradiente p{
+    fon
+}
+
 .gradiente-color {
     width: 100%;
     height: 10px;
@@ -487,9 +495,8 @@ header{
 
 .emoji_grid{
     display:flex;
-    flex-wrap:wrap;
     justify-content: space-around;
-    width: 40%;
+    width: 80%;
     margin:auto;
 }
 
@@ -554,17 +561,17 @@ header{
     left: 12px;
 }
 
-/* summary{
-    font-size: 20px;
+  summary.modulo {
+    font-size: 5px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     background-color:#69BF97 ;
 
-} */
+} 
 
 .principal_modulos{
-    margin-left: auto;
+    margin-left: 60px;
     margin-right: auto;
     width: 75%;
     height: 100%;
@@ -578,11 +585,11 @@ details{
 .Arrow{
 
     display:inline-block;
-    width: 10px;
-    height: 10px;
+    width: 3px;
+    height: 3px;
     margin: 10px;
-    border-top:solid 5px;
-    border-right: solid 5px;
+    border-top:solid 1px;
+    border-right: solid 1px;
     transform: rotate(130deg);
 }
 
@@ -592,17 +599,18 @@ details{
 footer  {
     width: 100%;
     height: 10vh;
-    background-color: green;
+    background-color: #009458;
 }
 .redesfooter{
     display: flex;
-    flex-wrap: wrap;
-    gap:50px;
-    justify-content: end;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
+    margin-left: 35px;
+
 }
 .footer_img {
-    width: 40px;
+    width: 15px;
 }
 .footer-images_redes {
     display: flex;
