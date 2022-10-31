@@ -19,9 +19,11 @@ html{
 
 body{
     position: relative;
-    left:15%;
+    left:14%;
     font-family: 'Dosis', sans-serif;
-    width: 85%;
+    width: 95%;
+    padding: 1rem;
+    padding-right: 4rem;
 }
 
 
@@ -34,12 +36,104 @@ header{
     top:0;
     left:0;
     height: 100%;
-    width: 15%;
-    background-color: green;
+    width: 6%;
+    background-color:  #009458;
+}
+.hoja_usuario{
+    height: 2.5%;
+    width:60%;
+    border-radius:45% 0 45% 0;
+    background-color: blanchedalmond;
+    margin: 2rem 0.5rem 0rem 1.1rem;
+}
+.img_usuario{
+    width: 70%;
+    margin: 0.5rem 0.2rem 0.5rem 0.5rem;
+}
+.nombre_usuario{
+    text-align:center;
+    font-size: 1rem;
+}
+.menu_hamburguesa{
+    width: 30px;
+    display: block;
+    margin:auto;
+}
+.logo_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.logo_white{
+    width: 30px;
+    text-align: center;
+    margin: 0 1rem ;
+    z-index: 1;
+    vertical-align: bottom;
+}
+.medio_circulo{
+    background-color: #0a2c1f;
+    border-radius: 100px 100px 0 0;
+    height: 35px;
+    z-index: 0;
+}
+div.menu_estatico ul li{
+    list-style-type: none;
+    display: none;
 }
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
-
+@media ((min-width: 481px) and (max-width:768px)) { 
+    
+    html{ 
+        font-size: 12px;
+            header{
+            width: 20%;
+            padding: 3rem;
+            }
+            .img_usuario{
+                height: 6%;
+                width:100%;
+                border-radius:45% 0 45% 0;
+                background-color: blanchedalmond;
+                margin-bottom: 2rem;
+            }
+            .nombre_usuario{
+                text-align:center;
+                margin: 1rem;
+            }
+            div.menu_estatico ul li{
+                list-style-type: none;
+                display: none;
+            }
+        }
+    }
+@media (min-width: 769px) { 
+        html{
+            font-size: 16px;}
+        }
 /* ---------ESTILOS MAIN----------*/
+.nombre_diplomado{
+    text-align: center;
+}
+.foto_estudiante{
+    border-radius: 50%;
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top:1rem;
+    border: solid #32634F 0.2rem;
+}
+.info_estudiante{
+    border-radius: 6%;
+    background-color: #69BF97;
+    text-align: center;
+    padding: 0.5rem;
+    width: 50% ;
+    display: block;
+    margin: auto;
+    margin-top:1rem;
+}
+/* ----ESTILOS MAIN JULI-------- */
 .modulo-1{
     background-color: #69BF97;
     font-weight:bold;
@@ -620,3 +714,11 @@ footer  {
 }
 
 /* ---------ESTILOS FOOTER MEDIA QUERY----------*/
+@media ((min-width: 481px) and (max-width:768px)) { 
+    html{
+        font-size: 12px;}
+    }
+@media (min-width: 769px) { 
+        html{
+            font-size: 16px;}
+        }
