@@ -36,13 +36,14 @@ header{
     height: 100%;
     width: 6%;
     background-color:  #009458;
+    overflow: scroll;
 }
 .hoja_usuario{
     height: 2.5%;
     width:60%;
     border-radius:45% 0 45% 0;
     background-color: white;
-    margin: 2rem 0.5rem 0rem 1.1rem;
+    margin: 2rem 0.9rem 0rem 0.8rem;
 }
 .img_usuario{
     width: 70%;
@@ -50,7 +51,7 @@ header{
 }
 .nombre_usuario{
     text-align:center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 1rem;
 }
 .menu_hamburguesa{
@@ -59,16 +60,18 @@ header{
     margin:auto;
 }
 .logo_white{
-    width: 3.33rem;
+    width: 2.8rem;
     margin: auto;
+    margin-left: 0.7rem;
+    margin-top: 0.4rem;
 }
 .medio_circulo{
     background-color: #0a2c1f;
     border-radius: 100px 100px 0 0;
+    width: 6%;
     height: 35px;
-    z-index: 0;
-    flex-direction: column;
-    justify-content: flex-end;
+    position: fixed;
+    bottom:0;
 }
 div.menu_desktop ul li{
     list-style-type: none;
@@ -87,6 +90,7 @@ div.menu_desktop ul li{
     header{
         height: 100%;
         width: 15%;
+        overflow: scroll;
     }
     .hoja_usuario{
         height: 8%;
@@ -102,6 +106,11 @@ div.menu_desktop ul li{
     }
     .menu_hamburguesa{
         display: none;
+    }
+    .menu_desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     div.menu_desktop ul li{
         display: flex;
@@ -126,11 +135,10 @@ div.menu_desktop ul li{
     .medio_circulo{
         background-color: #0a2c1f;
         border-radius: 100px 100px 0 0;
-        width: 100%;
+        width: 15%;
         height: 85px;
-        display: flex;
-        align-items: center;
-        align-items: flex-end;
+        position: fixed;
+        bottom:0;
     }
     
     }
@@ -138,10 +146,12 @@ div.menu_desktop ul li{
 @media (min-width: 769px) { 
         html{
             font-size: 16px;}
+
         }
 /* ---------ESTILOS MAIN----------*/
 .nombre_diplomado{
     text-align: center;
+    padding: 1.5rem;
 }
 .foto_estudiante{
     border-radius: 50%;
