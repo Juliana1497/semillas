@@ -1,3 +1,10 @@
+:root{
+    --color_tareasrealizadas:#714793;
+    --color_tareasasignadas:#41A8E2;
+
+}
+
+
 /* ---------ESTILOS GENERALES----------*/
 *{
     margin: 0;
@@ -9,15 +16,19 @@ html{
 }
 
 /* ---------ESTILOS BODY----------*/
+
 body{
     position: relative;
-    left:20%;
-    width: 75% ;
+    left:15%;
     font-family: 'Dosis', sans-serif;
+    width: 85%;
 }
+
+
 /* ---------ESTILOS BODY MEDIA QUERY----------*/
 
 /* ---------ESTILOS HEADER----------*/
+
 header{
     position:fixed;
     top:0;
@@ -46,6 +57,21 @@ div.menu_estatico ul li{
 .modulo-1{
     background-color: #69BF97;
     font-weight:bold;
+    display: flex;
+    margin: auto;
+    margin: 1rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+.estado-animo{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.estado-animo{
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 .valoraciones_clase{
     display: flex;
@@ -64,6 +90,11 @@ div.menu_estatico ul li{
     flex-direction: column;
     justify-content: center;
 }
+.hexagono h2{
+    width: 6rem;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
 .emoji {
     width: 50px;
     height: 50px;
@@ -75,6 +106,402 @@ div.menu_estatico ul li{
 
 .emoji_grid{
     display:flex;
+    justify-content: space-around;
+    width: 40%;
+    margin:auto;
+}
+
+.emoji .emoji_eyes{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.emoji .emoji_eyes::before,
+.emoji .emoji_eyes::after{
+    content:"" ;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 30px;
+    top: 15px;
+}
+
+.emoji .emoji_eyes::before{
+    left: 10px;
+}
+
+.emoji .emoji_eyes::after{
+    right: 10px;
+}
+
+.emoji.emoji--cry .emoji_lips {
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -5px;
+    left: 12px;
+}
+
+.emoji.emoji--serius .emoji_lips {
+    width: 20px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: 9px;
+    left: 12px;
+}
+
+.emoji.emoji--happy .emoji_lips {
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(135deg);
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+#emoji-animo{
+    background-color: green;
+    margin: none;
+    animation-name: emojis;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes emojis{
+    0% {
+        background-color: green; 
+    }
+    20%{
+        background-color: green;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: red;
+    }
+    100% {
+        background-color: red; 
+    } 
+}
+#emoji-animo .emoji_lips{
+    animation-name: labios;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes labios{
+    0% {
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(135deg);
+        position: absolute;
+        bottom: 6px;
+        left: 12px;
+    }
+    20%{
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(135deg);
+        position: absolute;
+        bottom: 6px;
+        left: 12px;
+    }
+    40% {
+        width: 20px;
+        height: 0.1px;
+        position: absolute;
+        color: #000;
+        bottom: 9px;
+        left: 12px;  
+        border-radius: 0%;
+        transform: rotate(0deg);
+        border: 2px solid black;
+    }
+    60%{
+        width: 20px;
+        height: 0.1px;
+        position: absolute;
+        color: black;
+        bottom: 9px;
+        left: 12px;
+        border-radius: 0%; 
+        transform: rotate(0deg);
+        border: 2px solid black;
+    }
+    80%{
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(-45deg);
+        position: absolute;
+        bottom: -5px;
+        left: 12px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+        border: 5px solid black;
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(-45deg);
+        position: absolute;
+        bottom: -5px;
+        left: 12px;
+    }
+}
+#desp{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.valoraciones_clase ul{
+    list-style: none;
+    font-size: 1.1rem;
+}
+.numero{
+    width: 2rem;
+    height: 2rem;
+    background-color: #A2EEE9;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 50% 50% 50%;
+    transform: rotate(50deg);
+}
+.numero p{
+    transform: rotate(-50deg);
+}
+.n-pregunta{
+    display: flex;
+}
+#preg{
+    width: 17rem;
+}
+.tacometro{
+    width: 10rem;
+    height: 10rem;
+    clip-path: circle(50% at 50% 100%);
+    background: linear-gradient(90deg,red 0%, red 27%,yellow 33.33%, yellow 66.66%, green 73%, green 100%);
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.tacometro::before{
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    clip-path: circle(50.1% at 50% 100%);
+    background: gray;
+    position: absolute;
+    margin: 5rem 2.5rem 0rem 2.5rem;
+}
+.tacometro::after{
+    content: "";
+    width: 0.3rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    margin: 7rem 7rem 0rem 7rem;
+    -webkit-animation: circle 5s infinite;
+    animation: circle 5s infinite;
+}
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg); transform-origin: bottom;
+    }
+    25%{
+        transform: rotate(70deg); transform-origin: bottom;
+    }
+    50%{
+        transform: rotate(0deg); transform-origin: bottom;
+    }
+    75%{
+        transform: rotate(-70deg); transform-origin: bottom;
+    }
+    100%{
+        transform:rotate(0deg);transform-origin: bottom;
+    }
+}
+.tacometro a{
+    color: #000;
+}
+.tacometro .emoji{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 3rem;
+    border: solid 0.1rem;
+}
+.tacometro .emoji_grid{
+    justify-content: center;
+    gap: 1.3rem;
+    width: 100%;
+}
+.tacometro .emoji.emoji--cry,
+.tacometro .emoji.emoji--happy{
+    margin-top: 6rem;     
+}
+.tacometro .emoji.emoji--serius{
+    margin-top: 4.3rem;
+}
+.tacometro .emoji .emoji_eyes::before,
+.tacometro .emoji .emoji_eyes::after{
+    width: 0.2rem;
+    height: 0.2rem;
+    top: 0.5rem;
+}
+.tacometro .emoji .emoji_eyes::before{
+    left: 0.3rem;
+}
+
+.tacometro .emoji .emoji_eyes::after{
+    right: 0.4rem;
+}
+.tacometro .emoji.emoji--cry .emoji_lips{
+    width: 1rem;
+    height: 1rem;
+    border: 0.2rem solid;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    left: 0.3rem;
+    bottom: -0.1rem;
+}
+.tacometro .emoji.emoji--serius .emoji_lips{
+    width: 1rem;
+    height: 0.1rem;
+    bottom: 0.5rem;
+    left: 0.3rem;
+}
+.tacometro .emoji.emoji--happy .emoji_lips{
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    left: 0.4rem;
+    bottom: 0.3rem;
+}
+
+.section-tareas{
+
+    background-color: #CDEADC;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+    padding-top: 10px ;
+    
+}
+
+.tittle_grafico{
+    margin-top: 100px;
+    text-align: center;
+    color:#32634F;
+    font-size: 40px;
+}
+.container_grafico{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grafico{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_tareasrealizadas) 25%,
+    var(--color_tareasasignadas) 25% 100%);
+    box-shadow: 1px 1px 5px 1px rgba(70 70 70);
+    
+}
+
+.leyenda{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+[class^="tareas_entregadas1"]{
+    width: 15px;
+    height: 15px;
+    background-color:var(--color_tareasrealizadas);
+    margin-right: 8px;
+    border-radius: 3px;
+    
+}
+[class^="tareas_asignadas1"]{
+    width: 15px;
+    height: 15px;
+    background-color:var(--color_tareasasignadas);
+    margin-right: 8px;
+    border-radius: 3px;
+    
+}
+
+.gradiente{
+    width: 40%;
+    margin:auto;
+}
+.gradiente-color {
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    
+}
+.emoji {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: solid 3px #000;
+    border-radius: 100%;
+    position: relative;
+}
+
+.emoji_grid{
+    display:flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     width: 40%;
     margin:auto;
@@ -140,50 +567,63 @@ div.menu_estatico ul li{
     bottom: 6px;
     left: 12px;
 }
-#emoji-animo{
-    background-color: green;
-    margin: none;
-}
-#desp{
-    /* margin: 2rem; */
-    text-align: center;
+
+/* summary{
+    font-size: 20px;
+    list-style: none;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-ul{
-    list-style: decimal;
-}
-.tacometro{
-    width: 10rem;
-    height: 10rem;
-    clip-path: circle(50.1% at 50% 100%);
-    background: linear-gradient(90deg,red 0%, red 27%,yellow 33.33%, yellow 66.66%, green 73%, green 100%);
-    position: relative;    
+    justify-content: space-between;
+    background-color:#69BF97 ;
+
+} */
+
+.principal_modulos{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 100%;
+
 }
 
-.tacometro::before{
-    content: "";
-    width: 5rem;
-    height: 5rem;
-    clip-path: circle(50.1% at 50% 100%);
-    background: gray;
-    position: absolute;
-    margin: 5rem 2.5rem 0rem 2.5rem;
+details{
+    margin-bottom: 15px;
 }
-.tacometro::after{
-    content: "";
-    width: 0.5rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: black;
-    position: absolute;
-    margin: 11rem 7rem 0rem 7rem;
+
+.Arrow{
+
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-top:solid 5px;
+    border-right: solid 5px;
+    transform: rotate(130deg);
 }
+
 /* ---------ESTILOS MAIN MEDIA QUERY----------*/
 
 /* ---------ESTILOS FOOTER----------*/
+footer  {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+.redesfooter{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: end;
+    align-items: center;
+}
+.footer_img {
+    width: 40px;
+}
+.footer-images_redes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+}
 
 /* ---------ESTILOS FOOTER MEDIA QUERY----------*/
 @media ((min-width: 481px) and (max-width:768px)) { 
