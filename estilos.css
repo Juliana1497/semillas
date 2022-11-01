@@ -90,7 +90,7 @@ header{
     box-shadow: 0 5px 0, 0 -5px 0;
 }
 header:has(#menu:hover){
-    --ampliar:15%;
+    --ampliar:30%;
     --desplegable: scaleX(1);
     --margin_hoja: 2rem 0.2rem 0.5rem 4rem;
 }
