@@ -43,27 +43,23 @@ header{
     background-color:  #009458;
     --desplegable: scaleX(0);
     --ampliar: 12%;
-    --margin_hoja: 2rem 0.9rem 0rem 0.8rem;
+    --margin_hoja: 2rem 1rem 0rem 0.5rem;
     transition: all .4s ease;
     z-index: 1;
 }
 .hoja_usuario{
-    height: 4.5%;
-    width: 24px;
+    height: 30px;
+    width: 30px;
     border-radius:45% 0 45% 0;
     background-color: white;
-   /* margin: var(--margin_hoja);*/
-   margin: auto;
-   margin-top: 10px;
+    margin: var(--margin_hoja);
     transition: all .4s ease;
     justify-content: center;
-    overflow: hidden; 
 }
 
 .img_usuario{
-    width: 1.5rem;
+    width: 2.5rem;
     margin: 0.5rem 0.2rem 0.5rem 0.5rem;
-    overflow: hidden; 
 }
 .nombre_usuario{
     text-align:center;
@@ -91,7 +87,7 @@ header{
     box-shadow: 0 5px 0, 0 -5px 0;
 }
 header:has(#menu:hover){
-    --ampliar:30%;
+    --ampliar:15%;
     --desplegable: scaleX(1);
     --margin_hoja: 2rem 0.2rem 0.5rem 4rem;
 }
@@ -158,12 +154,12 @@ div.menu_desktop ul li{
         --desplegable: scaleX(1);
     }
     .hoja_usuario{
-        height: 8%;
-        width:60%;
+        height: 60px;
+        width:60px;
         margin: 2rem 0.5rem 0rem 1.6rem;
     }
     .img_usuario{
-        width: 30px;
+        width: 3.5rem;
         margin: 0.5rem 0.2rem 0.5rem 0.8rem;
     }
     .nombre_usuario{
@@ -199,9 +195,7 @@ div.menu_desktop ul li{
             font-size: 16px;}
 
         .logo_white{
-        width: 4rem;
-        margin: auto;
-        margin-top: 0.6rem;
+        width: 6rem;
         }
         .container_grafico {
             align-items: center;
