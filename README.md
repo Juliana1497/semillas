@@ -84,7 +84,11 @@ En el CSS aplicamos los estilos generales así:
 
 Una vez subidos los archivos base al repositorio cada una trabajo en su rama en la parte correspondiente. En cada aparte asignado se realizó lo siguiente:
 
-HEADER: Para el header se utilizó una barra 
+HEADER: Para el header se utilizó una barra de navegación con una lista desordenada por dentro la cual se dividía en 4 partes: Usuario, procesos, ajustes y cerrar sesión. Dentro del aparte de procesos utilizamos la etiqueta de details, para hacer un menú desplegable de los diplomados ofrecidos por la fundación así como de sus estudiantes. Dicha barra de navegación en la versión mobile se desplegó mediante un hover aplicado al header el cual aumentaba su tamaño y lo hacía mediante una animación.
+
+![8](https://user-images.githubusercontent.com/107644961/199152966-76cee837-7e02-4c52-9806-62e7e1d84ff9.PNG)
+
+Para la primera parte del main implementamos el titulo del diplomado junto con la imagen y datos básicos del estudiante
 MAIN - PARTE 1 - VALORACIÓN DE LA CLASE:
 
 Para esta parte se utilizaron varias clases y etiquetas. 
