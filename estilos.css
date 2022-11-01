@@ -766,7 +766,7 @@ div.menu_desktop ul li{
     margin-bottom: 20px;
     margin-top: 20px;
     -webkit-animation: barra 5s infinite;
-    animation: barra 5s infinite;  
+    animation: barra 5s infinite;  
 }
 @-webkit-keyframes barra{
     0%{
