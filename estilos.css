@@ -39,19 +39,24 @@ header{
     top:0;
     left:0;
     height: 100%;
-    width: 6%;
+    width: var(--ampliar);
     background-color:  #009458;
-    overflow: scroll;
+    --desplegable: scaleX(0);
+    --ampliar: 6%;
+    --margin_hoja: 2rem 0.9rem 0rem 0.8rem;
+    transition: all .4s ease;
 }
 .hoja_usuario{
     height: 2.5%;
-    width:60%;
+    width:30px;
     border-radius:45% 0 45% 0;
     background-color: white;
-    margin: 2rem 0.9rem 0rem 0.8rem;
+    margin: var(--margin_hoja);
+    transition: all .4s ease;
 }
+
 .img_usuario{
-    width: 70%;
+    width: 20px;
     margin: 0.5rem 0.2rem 0.5rem 0.5rem;
 }
 .nombre_usuario{
@@ -60,27 +65,70 @@ header{
     margin-top: 1rem;
 }
 .menu_hamburguesa{
-    width: 30px;
     display: block;
-    margin:auto;
+    width:20px;
+    height: 20px;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.menu_hamburguesa::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: #000;
+    margin: auto;
+    inset: 0;
+    box-shadow: 0 5px 0, 0 -5px 0;
+}
+header:has(#menu:hover){
+    --ampliar:15%;
+    --desplegable: scaleX(1);
+    --margin_hoja: 2rem 0.2rem 0.5rem 4rem;
 }
 .logo_white{
     width: 2.8rem;
     margin: auto;
-    margin-left: 0.7rem;
-    margin-top: 0.4rem;
 }
 .medio_circulo{
     background-color: #0a2c1f;
     border-radius: 100px 100px 0 0;
-    width: 6%;
+    width:var(--ampliar);
     height: 35px;
     position: fixed;
     bottom:0;
+    display: flex;
+}
+.menu_desktop{
+    display: block;
+    transform: var(--desplegable);
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 55px;
+    transition: all .4s ease;
+}
+div.menu_desktop ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.nav_item{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+div.menu_desktop ul li a{
+    color: black;
+    text-decoration: none;
 }
 div.menu_desktop ul li{
     list-style-type: none;
-    display: none;
+    
 }
 /* ---------ESTILOS HEADER MEDIA QUERY----------*/
 @media (min-width: 481px) { 
@@ -96,6 +144,7 @@ div.menu_desktop ul li{
         height: 100%;
         width: 15%;
         overflow: scroll;
+        --desplegable: scaleX(1);
     }
     .hoja_usuario{
         height: 8%;
@@ -103,39 +152,26 @@ div.menu_desktop ul li{
         margin: 2rem 0.5rem 0rem 1.6rem;
     }
     .img_usuario{
-        width: 70%;
+        width: 30px;
         margin: 0.5rem 0.2rem 0.5rem 0.8rem;
     }
     .nombre_usuario{
         font-size: 1.5rem;
     }
+    .menu_desktop{
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        margin-top: 100px;
+    }
     .menu_hamburguesa{
         display: none;
-    }
-    .menu_desktop{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    div.menu_desktop ul li{
-        display: flex;
-        flex-direction: column;
-        margin: 1.5rem;
-    }
-    .nav_item{
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1rem;
-    }
-    div.menu_desktop ul li a{
-        color: black;
-        text-decoration: none;
     }
     .logo_white{
         width: 5rem;
         margin: auto;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
     }
     .medio_circulo{
         background-color: #0a2c1f;
@@ -695,32 +731,18 @@ div.menu_desktop ul li{
     margin-top: 10px;
 }
 
+.gradiente p{
+    fon
+}
+
 .gradiente-color {
     width: 100%;
     height: 10px;
     background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
     margin-bottom: 20px;
-    margin-top: 20px; 
-    -webkit-animation: barra 5s infinite;
-    animation: barra 5s infinite;   
-}
-
-@-webkit-keyframes barra{
-    0%{
-        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%); 
-    }
-    25%{
-        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
-    }
-    50%{
-        background-image: linear-gradient(90deg, red 0%, red 100%);
-    }
-    75%{
-        background-image: linear-gradient(90deg, yellow 0%, yellow 100%);
-    }
-    100%{
-        background-image: linear-gradient(90deg, green 0%, green 100%);
-    }
+    margin-top: 20px;
+    
+    
 }
 .emoji {
     width: 50px;
