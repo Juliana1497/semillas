@@ -46,6 +46,7 @@ header{
     --margin_hoja: 2rem 1rem 0rem 0.5rem;
     transition: all .4s ease;
     z-index: 1;
+    overflow:hidden;
 }
 .hoja_usuario{
     height: 30px;
@@ -105,6 +106,7 @@ header:has(#menu:hover){
     position: fixed;
     bottom:0;
     display: flex;
+    overflow:hidden;
 }
 .menu_desktop{
     display: block;
@@ -158,7 +160,7 @@ div.menu_desktop ul li{
     .hoja_usuario{
         height: 60px;
         width:60px;
-        margin: 2rem 0.5rem 0rem 1.6rem;
+        margin: 2rem 0.8rem 0rem 1.6rem;
         overflow:hidden;
     }
     .img_usuario{
