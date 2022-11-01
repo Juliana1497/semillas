@@ -56,7 +56,7 @@ header{
    margin-top: 10px;
     transition: all .4s ease;
     justify-content: center;
-    p
+    
 }
 
 .img_usuario{
@@ -753,9 +753,6 @@ div.menu_desktop ul li{
     margin-top: 10px;
 }
 
-.gradiente p{
-    fon
-}
 
 .gradiente-color {
     width: 100%;
