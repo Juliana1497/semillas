@@ -169,7 +169,7 @@ FOOTER:
 
 se aplicó position fixed para que el footer quedará fijo y no hiciera scroll al momento de desplazarse por la app al igual que display flex para organizar los elementos en el espacio destinado.
 
-Para finalizar, realizamos los diferentes commits y merge necesarios para ir unificando el proyecto y así obtener una página prototipada en HTML y CSS en GitHub pages la cual se puede visualizar en el siguiente link: https://juliana1497.github.io/semillas/
+Para finalizar, realizamos los diferentes commits y merge necesarios para ir unificando el proyecto y así obtener una página prototipada en HTML y CSS en GitHub pages la cual se puede visualizar en el siguiente link: https://semillas-eight.vercel.app/
 
 
 
