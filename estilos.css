@@ -769,21 +769,21 @@ div.menu_desktop ul li{
     animation: barra 5s infinite;  
 }
 @-webkit-keyframes barra{
-    0%{
-        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%); 
-    }
-    25%{
-        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
-    }
-    50%{
-        background-image: linear-gradient(90deg, red 0%, red 100%);
-    }
-    75%{
-        background-image: linear-gradient(90deg, yellow 0%, yellow 100%);
-    }
+    0%{
+        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%); 
+    }
+    25%{
+        background-image: linear-gradient(90deg, red 0%, red 33.33%, yellow 33.33%, yellow 66.66%, green 66.66%, green 100%);
+    }
+    50%{
+        background-image: linear-gradient(90deg, red 0%, red 100%);
+    }
+    75%{
+        background-image: linear-gradient(90deg, yellow 0%, yellow 100%);
+    }
     100%{
-        background-image: linear-gradient(90deg, green 0%, green 100%);
-    }
+        background-image: linear-gradient(90deg, green 0%, green 100%);
+    }
 }
 .emoji {
     width: 50px;
